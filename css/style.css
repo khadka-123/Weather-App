@@ -1,0 +1,125 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #4ca1af, #c4e0e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 70%;
+  border: 2px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 10px;
+  background: #4ca1af;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.search-box button:hover {
+  background: #357b83;
+}
+
+/* Location Not Found */
+.location-not-found {
+  display: none;
+  text-align: center;
+  color: #d9534f;
+}
+
+.location-not-found img {
+  width: 100px;
+  margin-top: 10px;
+}
+
+/* Weather Details */
+.weather-body {
+  display: none; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.weather-body img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.weather-box {
+  margin: 10px 0;
+}
+
+.weather-box #temperature {
+  font-size: 36px;
+  color: #333;
+}
+
+.weather-box #description {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Humidity and Wind Details */
+.humidity-details {
+  display: none; /* Hidden by default */
+  justify-content: space-between;
+}
+
+.humidity, .wind {
+  display: flex;
+  align-items: center;
+}
+
+.humidity i, .wind i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #4ca1af;
+}
+
+.humidity-box, .wind-box {
+  text-align: left;
+}
+
+.humidity-box p, .wind-box p {
+  font-size: 20px;
+  color: #333;
+}
+
+.humidity-box span, .wind-box span {
+  font-size: 14px;
+  color: #666;
+}
